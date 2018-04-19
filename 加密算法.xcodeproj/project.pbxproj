@@ -1,0 +1,410 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D1790FC11EF8C27A00F19E29 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D1790FC01EF8C27A00F19E29 /* main.m */; };
+		D1790FC41EF8C27A00F19E29 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D1790FC31EF8C27A00F19E29 /* AppDelegate.m */; };
+		D1790FC71EF8C27A00F19E29 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D1790FC61EF8C27A00F19E29 /* ViewController.m */; };
+		D1790FCA1EF8C27A00F19E29 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D1790FC81EF8C27A00F19E29 /* Main.storyboard */; };
+		D1790FCC1EF8C27A00F19E29 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D1790FCB1EF8C27A00F19E29 /* Assets.xcassets */; };
+		D1790FCF1EF8C27A00F19E29 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D1790FCD1EF8C27A00F19E29 /* LaunchScreen.storyboard */; };
+		D1790FDF1EF8C32600F19E29 /* NSData+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = D1790FD81EF8C32600F19E29 /* NSData+Base64.m */; };
+		D1790FE01EF8C32600F19E29 /* NSData+Encryption.m in Sources */ = {isa = PBXBuildFile; fileRef = D1790FDA1EF8C32600F19E29 /* NSData+Encryption.m */; };
+		D1790FE11EF8C32600F19E29 /* NSString+Encryption.m in Sources */ = {isa = PBXBuildFile; fileRef = D1790FDC1EF8C32600F19E29 /* NSString+Encryption.m */; };
+		D1790FEC1EF8C9C700F19E29 /* EncryptionTools.m in Sources */ = {isa = PBXBuildFile; fileRef = D1790FE51EF8C9C700F19E29 /* EncryptionTools.m */; };
+		D1790FED1EF8C9C700F19E29 /* RSACryptor.m in Sources */ = {isa = PBXBuildFile; fileRef = D1790FE81EF8C9C700F19E29 /* RSACryptor.m */; };
+		D1790FEE1EF8C9C700F19E29 /* NSString+Hash.m in Sources */ = {isa = PBXBuildFile; fileRef = D1790FEB1EF8C9C700F19E29 /* NSString+Hash.m */; };
+		D1790FF11EF8D08E00F19E29 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D1790FF01EF8D08E00F19E29 /* Security.framework */; };
+		D1790FF91EF8D1FE00F19E29 /* SSKeychain.m in Sources */ = {isa = PBXBuildFile; fileRef = D1790FF81EF8D1FE00F19E29 /* SSKeychain.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		D1790FBC1EF8C27A00F19E29 /* 加密算法.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "加密算法.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D1790FC01EF8C27A00F19E29 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D1790FC21EF8C27A00F19E29 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		D1790FC31EF8C27A00F19E29 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		D1790FC51EF8C27A00F19E29 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		D1790FC61EF8C27A00F19E29 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		D1790FC91EF8C27A00F19E29 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D1790FCB1EF8C27A00F19E29 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D1790FCE1EF8C27A00F19E29 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D1790FD01EF8C27A00F19E29 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D1790FD71EF8C32600F19E29 /* NSData+Base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+Base64.h"; sourceTree = "<group>"; };
+		D1790FD81EF8C32600F19E29 /* NSData+Base64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+Base64.m"; sourceTree = "<group>"; };
+		D1790FD91EF8C32600F19E29 /* NSData+Encryption.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+Encryption.h"; sourceTree = "<group>"; };
+		D1790FDA1EF8C32600F19E29 /* NSData+Encryption.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+Encryption.m"; sourceTree = "<group>"; };
+		D1790FDB1EF8C32600F19E29 /* NSString+Encryption.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Encryption.h"; sourceTree = "<group>"; };
+		D1790FDC1EF8C32600F19E29 /* NSString+Encryption.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Encryption.m"; sourceTree = "<group>"; };
+		D1790FE41EF8C9C700F19E29 /* EncryptionTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EncryptionTools.h; sourceTree = "<group>"; };
+		D1790FE51EF8C9C700F19E29 /* EncryptionTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EncryptionTools.m; sourceTree = "<group>"; };
+		D1790FE71EF8C9C700F19E29 /* RSACryptor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSACryptor.h; sourceTree = "<group>"; };
+		D1790FE81EF8C9C700F19E29 /* RSACryptor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSACryptor.m; sourceTree = "<group>"; };
+		D1790FEA1EF8C9C700F19E29 /* NSString+Hash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Hash.h"; sourceTree = "<group>"; };
+		D1790FEB1EF8C9C700F19E29 /* NSString+Hash.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Hash.m"; sourceTree = "<group>"; };
+		D1790FF01EF8D08E00F19E29 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		D1790FF71EF8D1FE00F19E29 /* SSKeychain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSKeychain.h; sourceTree = "<group>"; };
+		D1790FF81EF8D1FE00F19E29 /* SSKeychain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSKeychain.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D1790FB91EF8C27A00F19E29 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D1790FF11EF8D08E00F19E29 /* Security.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D1790FB31EF8C27A00F19E29 = {
+			isa = PBXGroup;
+			children = (
+				D1790FBE1EF8C27A00F19E29 /* 加密算法 */,
+				D1790FBD1EF8C27A00F19E29 /* Products */,
+				D1790FEF1EF8D08D00F19E29 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		D1790FBD1EF8C27A00F19E29 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D1790FBC1EF8C27A00F19E29 /* 加密算法.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D1790FBE1EF8C27A00F19E29 /* 加密算法 */ = {
+			isa = PBXGroup;
+			children = (
+				D1790FF31EF8D0FF00F19E29 /* Keychain */,
+				D1790FE31EF8C9C700F19E29 /* Cipher */,
+				D1790FE61EF8C9C700F19E29 /* Cipher-RSA */,
+				D1790FE91EF8C9C700F19E29 /* Security */,
+				D1790FD61EF8C30C00F19E29 /* category */,
+				D1790FC21EF8C27A00F19E29 /* AppDelegate.h */,
+				D1790FC31EF8C27A00F19E29 /* AppDelegate.m */,
+				D1790FC51EF8C27A00F19E29 /* ViewController.h */,
+				D1790FC61EF8C27A00F19E29 /* ViewController.m */,
+				D1790FC81EF8C27A00F19E29 /* Main.storyboard */,
+				D1790FCB1EF8C27A00F19E29 /* Assets.xcassets */,
+				D1790FCD1EF8C27A00F19E29 /* LaunchScreen.storyboard */,
+				D1790FD01EF8C27A00F19E29 /* Info.plist */,
+				D1790FBF1EF8C27A00F19E29 /* Supporting Files */,
+			);
+			path = "加密算法";
+			sourceTree = "<group>";
+		};
+		D1790FBF1EF8C27A00F19E29 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D1790FC01EF8C27A00F19E29 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D1790FD61EF8C30C00F19E29 /* category */ = {
+			isa = PBXGroup;
+			children = (
+				D1790FD71EF8C32600F19E29 /* NSData+Base64.h */,
+				D1790FD81EF8C32600F19E29 /* NSData+Base64.m */,
+				D1790FD91EF8C32600F19E29 /* NSData+Encryption.h */,
+				D1790FDA1EF8C32600F19E29 /* NSData+Encryption.m */,
+				D1790FDB1EF8C32600F19E29 /* NSString+Encryption.h */,
+				D1790FDC1EF8C32600F19E29 /* NSString+Encryption.m */,
+			);
+			path = category;
+			sourceTree = "<group>";
+		};
+		D1790FE31EF8C9C700F19E29 /* Cipher */ = {
+			isa = PBXGroup;
+			children = (
+				D1790FE41EF8C9C700F19E29 /* EncryptionTools.h */,
+				D1790FE51EF8C9C700F19E29 /* EncryptionTools.m */,
+			);
+			path = Cipher;
+			sourceTree = "<group>";
+		};
+		D1790FE61EF8C9C700F19E29 /* Cipher-RSA */ = {
+			isa = PBXGroup;
+			children = (
+				D1790FE71EF8C9C700F19E29 /* RSACryptor.h */,
+				D1790FE81EF8C9C700F19E29 /* RSACryptor.m */,
+			);
+			path = "Cipher-RSA";
+			sourceTree = "<group>";
+		};
+		D1790FE91EF8C9C700F19E29 /* Security */ = {
+			isa = PBXGroup;
+			children = (
+				D1790FEA1EF8C9C700F19E29 /* NSString+Hash.h */,
+				D1790FEB1EF8C9C700F19E29 /* NSString+Hash.m */,
+			);
+			path = Security;
+			sourceTree = "<group>";
+		};
+		D1790FEF1EF8D08D00F19E29 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D1790FF01EF8D08E00F19E29 /* Security.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D1790FF31EF8D0FF00F19E29 /* Keychain */ = {
+			isa = PBXGroup;
+			children = (
+				D1790FF71EF8D1FE00F19E29 /* SSKeychain.h */,
+				D1790FF81EF8D1FE00F19E29 /* SSKeychain.m */,
+			);
+			name = Keychain;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D1790FBB1EF8C27A00F19E29 /* 加密算法 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D1790FD31EF8C27A00F19E29 /* Build configuration list for PBXNativeTarget "加密算法" */;
+			buildPhases = (
+				D1790FB81EF8C27A00F19E29 /* Sources */,
+				D1790FB91EF8C27A00F19E29 /* Frameworks */,
+				D1790FBA1EF8C27A00F19E29 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "加密算法";
+			productName = "加密算法";
+			productReference = D1790FBC1EF8C27A00F19E29 /* 加密算法.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D1790FB41EF8C27A00F19E29 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = weiguang;
+				TargetAttributes = {
+					D1790FBB1EF8C27A00F19E29 = {
+						CreatedOnToolsVersion = 8.3.2;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = D1790FB71EF8C27A00F19E29 /* Build configuration list for PBXProject "加密算法" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D1790FB31EF8C27A00F19E29;
+			productRefGroup = D1790FBD1EF8C27A00F19E29 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D1790FBB1EF8C27A00F19E29 /* 加密算法 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D1790FBA1EF8C27A00F19E29 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D1790FCF1EF8C27A00F19E29 /* LaunchScreen.storyboard in Resources */,
+				D1790FCC1EF8C27A00F19E29 /* Assets.xcassets in Resources */,
+				D1790FCA1EF8C27A00F19E29 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D1790FB81EF8C27A00F19E29 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D1790FEC1EF8C9C700F19E29 /* EncryptionTools.m in Sources */,
+				D1790FC71EF8C27A00F19E29 /* ViewController.m in Sources */,
+				D1790FDF1EF8C32600F19E29 /* NSData+Base64.m in Sources */,
+				D1790FEE1EF8C9C700F19E29 /* NSString+Hash.m in Sources */,
+				D1790FE01EF8C32600F19E29 /* NSData+Encryption.m in Sources */,
+				D1790FC41EF8C27A00F19E29 /* AppDelegate.m in Sources */,
+				D1790FED1EF8C9C700F19E29 /* RSACryptor.m in Sources */,
+				D1790FE11EF8C32600F19E29 /* NSString+Encryption.m in Sources */,
+				D1790FC11EF8C27A00F19E29 /* main.m in Sources */,
+				D1790FF91EF8D1FE00F19E29 /* SSKeychain.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		D1790FC81EF8C27A00F19E29 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D1790FC91EF8C27A00F19E29 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D1790FCD1EF8C27A00F19E29 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D1790FCE1EF8C27A00F19E29 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D1790FD11EF8C27A00F19E29 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		D1790FD21EF8C27A00F19E29 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D1790FD41EF8C27A00F19E29 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "加密算法/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "changhong.----";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		D1790FD51EF8C27A00F19E29 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "加密算法/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "changhong.----";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D1790FB71EF8C27A00F19E29 /* Build configuration list for PBXProject "加密算法" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D1790FD11EF8C27A00F19E29 /* Debug */,
+				D1790FD21EF8C27A00F19E29 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D1790FD31EF8C27A00F19E29 /* Build configuration list for PBXNativeTarget "加密算法" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D1790FD41EF8C27A00F19E29 /* Debug */,
+				D1790FD51EF8C27A00F19E29 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D1790FB41EF8C27A00F19E29 /* Project object */;
+}
